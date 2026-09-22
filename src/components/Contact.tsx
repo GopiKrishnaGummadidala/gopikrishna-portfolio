@@ -27,6 +27,9 @@ export function Contact() {
           <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
             LinkedIn
           </a>
+          <a href={profile.resumeUrl} download className="hover:text-foreground">
+            Download CV
+          </a>
         </div>
       </ScrollReveal>
 

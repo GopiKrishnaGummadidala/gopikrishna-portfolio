@@ -7,6 +7,7 @@ export const profile = {
   email: "gopikrishna.gummadidala@gmail.com",
   linkedin: "https://linkedin.com/in/gopikrishna-gummadidala",
   github: "https://github.com/GopiKrishnaGummadidala",
+  resumeUrl: "/Gopikrishna-Gummadidala-CV.pdf",
   tagline:
     "13+ years building scalable enterprise applications across JavaScript and .NET — and, more recently, the AI agents that automate the work around them.",
   summary:

@@ -76,6 +76,13 @@ export function Hero() {
             Get in touch
           </a>
           <a
+            href={profile.resumeUrl}
+            download
+            className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
+          >
+            Download CV
+          </a>
+          <a
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
