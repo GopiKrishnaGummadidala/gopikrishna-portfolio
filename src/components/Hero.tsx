@@ -1,6 +1,8 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import Image from "next/image";
+import headshot from "@/assets/headshot.jpg";
 import { profile } from "@/data/profile";
 import { GradientBackdrop } from "./GradientBackdrop";
 
@@ -24,6 +26,23 @@ export function Hero() {
         animate="visible"
         className="mx-auto flex max-w-3xl flex-col items-start gap-6"
       >
+        <motion.div variants={item}>
+          <motion.div
+            animate={{ y: [0, -8, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            className="relative h-28 w-28 shrink-0 overflow-hidden rounded-full border border-white/15 shadow-[0_0_50px_rgba(45,212,191,0.2)]"
+          >
+            <Image
+              src={headshot}
+              alt={profile.name}
+              fill
+              sizes="112px"
+              priority
+              className="object-cover"
+            />
+          </motion.div>
+        </motion.div>
+
         <motion.span
           variants={item}
           className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-muted"
