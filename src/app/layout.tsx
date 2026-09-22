@@ -24,7 +24,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground">{children}</body>
+      {/* suppressHydrationWarning: browser extensions (Grammarly, Dark Reader, etc.) inject attributes onto <body> before hydration; this only ignores mismatches on this tag's own attributes, not its children */}
+      <body className="min-h-full flex flex-col bg-background text-foreground" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
