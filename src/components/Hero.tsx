@@ -43,16 +43,18 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        <motion.span
-          variants={item}
-          className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-muted"
-        >
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent/60" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+        <motion.div variants={item} className="flex flex-wrap items-center gap-3">
+          <span className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-muted">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent/60" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+            </span>
+            Open to new opportunities · {profile.location}
           </span>
-          Open to new opportunities · {profile.location}
-        </motion.span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-muted">
+            {profile.workAuthorization} · {profile.availability}
+          </span>
+        </motion.div>
 
         <motion.h1 variants={item} className="text-4xl font-semibold tracking-tight text-foreground sm:text-6xl">
           {profile.name}

@@ -2,6 +2,8 @@ export const profile = {
   name: "Gopikrishna Gummadidala",
   title: "Full Stack Software Engineer",
   location: "Germany",
+  workAuthorization: "EU Permanent Residence",
+  availability: "Available immediately",
   email: "gopikrishna.gummadidala@gmail.com",
   linkedin: "https://linkedin.com/in/gopikrishna-gummadidala",
   github: "https://github.com/GopiKrishnaGummadidala",
