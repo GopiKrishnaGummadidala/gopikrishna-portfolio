@@ -1,12 +1,14 @@
+import { Star } from "lucide-react";
 import { highlights } from "@/data/profile";
 import { ScrollReveal } from "./ScrollReveal";
+import { SectionHeading } from "./SectionHeading";
 import { TiltCard } from "./TiltCard";
 
 export function Highlights() {
   return (
     <section id="highlights" className="mx-auto max-w-3xl px-6 py-28">
       <ScrollReveal>
-        <h2 className="mb-12 text-sm font-medium uppercase tracking-widest text-accent">Highlights</h2>
+        <SectionHeading icon={Star}>Highlights</SectionHeading>
       </ScrollReveal>
 
       <div className="grid gap-6 sm:grid-cols-2">

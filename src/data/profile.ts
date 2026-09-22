@@ -17,7 +17,10 @@ export const profile = {
 export const stats = [
   { value: "13+", label: "Years in production software" },
   { value: "50%", label: "Manual triage cut by an AI bug-tracking agent" },
-  { value: "40–50%", label: "Load-time improvement, AngularJS → React/Angular" },
+  {
+    value: "40–50%",
+    label: "Load-time improvement, AngularJS → React/Angular",
+  },
   { value: "3", label: "Microsoft certifications (MCP, MCSA, MCSD)" },
 ];
 
@@ -58,7 +61,8 @@ export const experience = [
     role: "Software Engineer",
     period: "Oct 2019 — Present",
     location: "Hamburg, Germany",
-    context: "Enterprise software for international liner shipping · 120+ clients worldwide · WiseTech Global group",
+    context:
+      "Enterprise software for international liner shipping · 120+ clients worldwide · WiseTech Global group",
     points: [
       "Migrated a legacy AngularJS application to Angular/React (TypeScript): ~40% faster load time, ~60% smaller bundle.",
       "Owned full-stack delivery of Lease Contract Management, Equipment Tracking, and Booking systems (.NET, C#, NestJS, Node.js).",
@@ -73,7 +77,8 @@ export const experience = [
     role: "Senior Software Engineer",
     period: "Jul 2018 — Jul 2019",
     location: "Hyderabad, India",
-    context: "Digital transformation for Property & Casualty insurance · 100+ global insurer clients",
+    context:
+      "Digital transformation for Property & Casualty insurance · 100+ global insurer clients",
     points: [
       "Integrated PayPal and Braintree REST APIs for secure end-to-end payment processing, including webhook handling and failure recovery.",
       "Built real-time RESTful integrations between GEICO's HISS platform and external insurance providers.",
@@ -101,20 +106,53 @@ export const experience = [
       "Sole developer on a Consumables Management System for a manufacturing client — full stack plus hardware integration (barcode scanners, printers) on ASP.NET, C#, and WCF.",
     ],
   },
+  {
+    company: "San Informatics India Pvt Ltd",
+    role: "Software Engineer",
+    period: "Jan 2013 — Jan 2014",
+    location: "Hyderabad, India",
+    context: "",
+    points: ["software development"],
+  },
 ];
 
 export const skillGroups = [
   {
     label: "Frontend",
-    skills: ["Angular", "NgXS", "React", "Redux", "Next.js", "TypeScript", "Tailwind CSS", "PrimeNG"],
+    skills: [
+      "Angular",
+      "NgXS",
+      "React",
+      "Redux",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "PrimeNG",
+    ],
   },
   {
     label: "Backend",
-    skills: [".NET / .NET Core", "C#", "ASP.NET Web API", "Node.js", "NestJS", "Python", "FastAPI", "Blazor"],
+    skills: [
+      ".NET / .NET Core",
+      "C#",
+      "ASP.NET Web API",
+      "Node.js",
+      "NestJS",
+      "Python",
+      "FastAPI",
+      "Blazor",
+    ],
   },
   {
     label: "Data",
-    skills: ["SQL Server", "PostgreSQL", "MongoDB", "Redis", "Elasticsearch", "Entity Framework"],
+    skills: [
+      "SQL Server",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Elasticsearch",
+      "Entity Framework",
+    ],
   },
   {
     label: "Cloud & DevOps",

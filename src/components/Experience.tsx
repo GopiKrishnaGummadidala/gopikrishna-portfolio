@@ -1,11 +1,13 @@
+import { Briefcase } from "lucide-react";
 import { experience } from "@/data/profile";
 import { ScrollReveal } from "./ScrollReveal";
+import { SectionHeading } from "./SectionHeading";
 
 export function Experience() {
   return (
     <section id="experience" className="mx-auto max-w-3xl px-6 py-28">
       <ScrollReveal>
-        <h2 className="mb-12 text-sm font-medium uppercase tracking-widest text-accent">Experience</h2>
+        <SectionHeading icon={Briefcase}>Experience</SectionHeading>
       </ScrollReveal>
 
       <div className="relative space-y-12 border-l border-white/10 pl-8">
@@ -18,7 +20,8 @@ export function Experience() {
             </div>
             <div className="mt-0.5 text-sm font-medium text-accent">{job.company}</div>
             <div className="text-sm text-muted">
-              {job.location} · {job.context}
+              {job.location}
+              {job.context && ` · ${job.context}`}
             </div>
             <ul className="mt-4 space-y-2">
               {job.points.map((point) => (

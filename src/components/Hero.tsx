@@ -1,10 +1,12 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import { Download, Mail } from "lucide-react";
 import Image from "next/image";
 import headshot from "@/assets/headshot.jpg";
 import { profile } from "@/data/profile";
 import { GradientBackdrop } from "./GradientBackdrop";
+import { GithubIcon, LinkedinIcon } from "./icons";
 
 const container: Variants = {
   hidden: {},
@@ -71,31 +73,35 @@ export function Hero() {
         <motion.div variants={item} className="flex flex-wrap items-center gap-4 pt-2">
           <a
             href={`mailto:${profile.email}`}
-            className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
+            className="flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
           >
+            <Mail className="h-4 w-4" strokeWidth={2} />
             Get in touch
           </a>
           <a
             href={profile.resumeUrl}
             download
-            className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
+            className="flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
           >
+            <Download className="h-4 w-4" strokeWidth={2} />
             Download CV
           </a>
           <a
             href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
+            className="flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
           >
+            <GithubIcon className="h-4 w-4" />
             GitHub
           </a>
           <a
             href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
+            className="flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
           >
+            <LinkedinIcon className="h-4 w-4" />
             LinkedIn
           </a>
         </motion.div>
