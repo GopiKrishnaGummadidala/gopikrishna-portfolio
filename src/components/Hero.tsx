@@ -5,6 +5,7 @@ import { Download, Mail } from "lucide-react";
 import Image from "next/image";
 import headshot from "@/assets/headshot.jpg";
 import { profile } from "@/data/profile";
+import { FloatingText } from "./FloatingText";
 import { GradientBackdrop } from "./GradientBackdrop";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
@@ -59,7 +60,7 @@ export function Hero() {
         </motion.div>
 
         <motion.h1 variants={item} className="text-4xl font-semibold tracking-tight text-foreground sm:text-6xl">
-          {profile.name}
+          <FloatingText text={profile.name} />
         </motion.h1>
 
         <motion.p variants={item} className="text-xl font-medium text-accent sm:text-2xl">
